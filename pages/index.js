@@ -1,9 +1,9 @@
 export function getStaticProps() {
   return {
     props: {
-      projectName: process.env.NEXT_PUBLIC_PROJECT_NAME,
-      sentryUrl: process.env.SENTRY_URL,
-      databaseUrl: process.env.DATABASE_URI
+      projectName: `${process.env.NEXT_PUBLIC_PROJECT_NAME}`,
+      sentryUrl: `${process.env.SENTRY_URL}`,
+      databaseUrl: `${process.env.DATABASE_URI}`
     }
   }
 }
